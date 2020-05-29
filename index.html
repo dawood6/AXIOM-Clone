@@ -4,50 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link id="favicon" rel="icon" href="Untitled-3.svg" />
+    <link rel=" icon " href="Untitled-3.svg " />
+    <link rel="stylesheet/less " type="text/css " href="styles.css " />
+    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
     <title>AXIOM </title>
 </head>
 
 <body>
-    <!-- <img src="Untitled-1.svg" id="main-logo"> -->
-    <div class="container1">
-        <div class="container">
-            <div class="logo">
-                <a href="#"><img src="Untitled-1copy.png" alt="logo"></a>
-            </div>
-            <div class="navbar">
-
-                <div class="icon-bar" onclick="Show()">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
-
-                <ul id="nav-lists">
-                    <li class="close"><span onclick="Hide()">×</span></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-
-            </div>
-        </div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, natus? Non unde vitae doloribus deleniti earum maxime at id, in exercitationem. Culpa veniam architecto a aspernatur fuga iste illo tempore?</p>
-    </div>
-
 
     <script>
-        var navList = document.getElementById("nav-lists");
+        $('.nav-toggle').click(function(e) {
 
-        function Show() {
-            navList.classList.add("_Menus-show");
-        }
+            e.preventDefault();
+            $("html").toggleClass("openNav");
+            $(".nav-toggle").toggleClass("active");
 
-        function Hide() {
-            navList.classList.remove("_Menus-show");
-        }
+        });
     </script>
 </body>
 
