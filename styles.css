@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-back {
+    height: 175px;
+}
+
+.nav {
+    height: 100%;
+    width: 338px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+i {
+    color: #CFD8DC;
+    font-size: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+h2 {
+    color: #CFD8DC;
+}
+
+table {
+    padding-top: 30px;
+}
