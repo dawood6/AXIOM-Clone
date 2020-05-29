@@ -5,6 +5,7 @@ body {
 
 .nav-back {
     height: 175px;
+    margin-left: 60px;
 }
 
 .nav {
@@ -19,16 +20,20 @@ body {
 }
 
 i {
-    color: #CFD8DC;
+    color: rgb(187, 201, 207);
     font-size: 40px;
     margin-right: 10px;
     margin-left: 10px;
+    padding-bottom: 20px;
+    margin-top: 13px;
 }
 
 h2 {
-    color: #CFD8DC;
+    color: rgb(187, 201, 207);
+    font-size: 27px;
 }
 
-table {
-    padding-top: 30px;
+.row {
+    display: flex;
+    flex-direction: row;
 }
