@@ -9,26 +9,44 @@
 </head>
 
 <body>
-    <div class="nav">
-        <img src="Untitled-3.svg" class="nav-back">
-        <div class="row">
-            <i class="fas fa-home"></i>
-            <h2>HOME</h2>
-        </div>
-        <div class="row">
-            <i class="fas fa-play"></i>
-            <h2>VIDEOS</h2>
-        </div>
-        <div class="row">
-            <i class="fas fa-address-card"></i>
-            <h2>STUDENTS CARDS</h2>
-        </div>
-        <div class="row">
-            <i class="fas fa-cog"></i>
-            <h2>SETTINGS</h2>
+    <div id="box">
+        <div id="items">
+            <div class="item"><img src="Untitled-3.svg"></div>
+            <div class="item"><i class="fas fa-home"></i> HOME</div>
+            <div class="item"><i class="fas fa-play"></i> VIDEOS</div>
+            <div class="item"><i class="fas fa-address-card"></i> STUDENTS CARDS</div>
+            <div class="item"><i class="fas fa-cog"></i> SETTINGS</div>
         </div>
     </div>
+    <div id="btn">
+        <div id="top"></div>
+        <div id="middle"></div>
+        <div id="bottom"></div>
+    </div>
+    <script>
+        const sidebarBox = document.querySelector('#box');
+        const sidebarBtn = document.querySelector('#btn');
 
+        sidebarBtn.addEventListener('click', function(event) {
+
+            if (this.classList.contains('active')) {
+                this.classList.remove('active');
+                sidebarBox.classList.remove('active');
+            } else {
+                this.classList.add('active');
+                sidebarBox.classList.add('active');
+            }
+        });
+
+
+        window.addEventListener('keydown', function(event) {
+
+            if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
+                sidebarBtn.classList.remove('active');
+                sidebarBox.classList.remove('active');
+            }
+        });
+    </script>
 
     <script src="https://kit.fontawesome.com/5680d4e592.js" crossorigin="anonymous"></script>
 </body>
