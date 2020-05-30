@@ -102,7 +102,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    flex: 1;
+    margin-bottom: 100px;
 }
 
 .logos {
@@ -131,13 +131,4 @@ body {
 
 .setting {
     margin-right: 40px;
-}
-
-.circle {
-    width: 45px;
-    height: 45px * 2;
-    font-size: 50px;
-    color: #fff;
-    border-top-left-radius: 45 * 2;
-    border-bottom-left-radius: 45 * 2;
 }
