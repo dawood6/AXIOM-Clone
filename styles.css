@@ -40,11 +40,6 @@ body {
     transition: all 250ms;
 }
 
-#items .item:hover {
-    padding: 15px 30px;
-    background-color: rgba(52, 56, 56, 0.2);
-}
-
 #btn {
     position: fixed;
     z-index: 5;
