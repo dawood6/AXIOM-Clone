@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Assignment Two
+    name: Axiom Website
     steps:
       - uses: actions/checkout@v2
       - name: Install Node.js
